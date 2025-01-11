@@ -33,3 +33,19 @@ void printTab2D(int t[][COLS], int nRows, int nCols)
       if((j + 1) % COLS == 0) printf("\n");
     }
 }
+
+void Trans(int t[][COLS], int nRows, int nCols)
+{
+  if(nRows != nCols) {
+    printf("ERROR: macierz nie jest kwadratowa!!!\n");
+    return;
+  }
+
+  for(int i = 0;i < nRows - 1;i++)
+    for(int j = i + 1;j < nCols - 1;j++)
+    {
+      int temp = t[i][j];
+      t[i][j] = t[j][i];
+      t[j][i] = temp;
+    }
+}
