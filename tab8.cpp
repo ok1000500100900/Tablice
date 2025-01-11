@@ -26,11 +26,13 @@ int main()
   return 0;
 }
 
+// znak nowej linii
 void je()
 {
   printf("\n");
 }
 
+// inicjowanie pseudolosowej tablicy
 void initTab(int t[], int nSize)
 {
   srand((unsigned int)time(NULL));
@@ -40,6 +42,7 @@ void initTab(int t[], int nSize)
   }
 }
 
+// wydrukowanie tablicy
 void printTab(int t[], int nSize)
 {
   for(int i = 0;i < nSize;i++)
@@ -49,6 +52,7 @@ void printTab(int t[], int nSize)
   }
 }
 
+// sortowanie babelkowe
 void bubbleSort(int t[], int nSize)
 {
   for(int i = 0;i < nSize;i++)
@@ -65,6 +69,7 @@ void bubbleSort(int t[], int nSize)
   }
 }
 
+// proste wybieranie
 void simpleSelectionSort(int t[], int nSize)
 {
   for(int i = 0;i < nSize - 1;i++)
@@ -85,6 +90,7 @@ void simpleSelectionSort(int t[], int nSize)
   }
 }
 
+// proste wstawianie
 void simpleInsertionSort(int t[], int nSize)
 {
   for(int i = 0;i < nSize;i++)
@@ -101,6 +107,7 @@ void simpleInsertionSort(int t[], int nSize)
   }
 }
 
+// wyszukiwanie polowkowe
 int halfFind(int x, int t[], int nSize)
 {
   int p = 0;
