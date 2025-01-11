@@ -1,6 +1,5 @@
 #include <iostream>
 #define MAX 50
-#define MAXLINE 5
 
 int main()
 {
